@@ -2,16 +2,16 @@
   <form class="container" [formGroup]="modelForm">
     <div class="form-group">
       <label for="id">Id:</label>
-      <input #id class="form-control" name="id" formControlName="id" />
+      <input autocomplete="off" #id class="form-control" name="id" formControlName="id" />
     </div>
     <div class="form-group">
       <label for="n">Name:</label>
-      <input #n class="form-control" name="name" formControlName="name" />
+      <input autocomplete="off" #n class="form-control" name="name" formControlName="name" />
       <small class="form-text text-muted" *ngIf="formErrors.name">{{formErrors.name}}</small><br />
     </div>
     <div class="form-group">
       <label for="r">Role:</label>
-      <input class="form-control" #r name="role" formControlName="role" />
+      <input autocomplete="off" class="form-control" #r name="role" formControlName="role" />
       <small class="form-text text-muted" *ngIf="formErrors.role">{{formErrors.role}}</small><br />
     </div>
     <div class="btn-toolbar" role="toolbar">

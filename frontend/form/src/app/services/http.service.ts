@@ -10,7 +10,7 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-  readonly path = "http://YOURLOCALHOSTIP:8080";
+  readonly path = "http://192.168.2.113:8080";
 
   getAll(): Observable<Array<Employee>> {
     return this.http.get<Array<Employee>>(this.path + "/employees");
